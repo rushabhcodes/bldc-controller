@@ -1,0 +1,24 @@
+{
+  "name": "@tsci/rushabhcodes.bldc-controller",
+  "version": "1.0.0",
+  "description": "24 V ceiling-fan BLDC controller bench prototype",
+  "main": "index.circuit.tsx",
+  "keywords": [
+    "tscircuit",
+    "circuit",
+    "pcb",
+    "electronics"
+  ],
+  "scripts": {
+    "dev": "tsci dev",
+    "build": "tsci build",
+    "snapshot": "tsci snapshot",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "tscircuit": "0.0.2646",
+    "typescript": "5.9.3"
+  },
+  "author": "rushabhcodes"
+}
