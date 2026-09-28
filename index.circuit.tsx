@@ -256,11 +256,11 @@ export default function CeilingFanController() {
   return <board width="160mm" height="114mm" layers={4} title="Ceiling fan controller — bench revision A"
     schTraceAutoLabelEnabled thickness="1.6mm"
     partsEngine={{findPart: () => ({})}}
-    isViaInPadAllowed allowBlindAndBuriedVias={false}
-    minTraceWidth={.15} nominalTraceWidth={.25} minTraceToPadEdgeClearance={.15}
-    minPadEdgeToPadEdgeClearance={.15} minViaHoleDiameter={.3} minViaPadDiameter={.6}
-    pcbStyle={{viaHoleDiameter:.3,viaPadDiameter:.6}}
-    minBoardEdgeClearance={.3} autorouter={{local:true, traceClearance:.15, allowViaInPad:false}}>
+    isViaInPadAllowed allowBlindAndBuriedVias
+    minTraceWidth={.15} nominalTraceWidth={.15} minTraceToPadEdgeClearance={.1}
+    minPadEdgeToPadEdgeClearance={.1} minViaHoleDiameter={.2} minViaPadDiameter={.4}
+    pcbStyle={{viaHoleDiameter:.2,viaPadDiameter:.4}}
+    minBoardEdgeClearance={.3} autorouter={{local:true, traceClearance:.1, allowViaInPad:false}}>
     {sections.map((name) => <Fragment key={name}><schematicsheet name={name} displayName={name} sheetWidth={500} sheetHeight={800} /><schematicsection name={`section_${name}`} displayName={name} /></Fragment>)}
     {parts}
     <copperpour name="GND_PLANE" layer="inner1" connectsTo="net.GND" unbroken clearance={.25} boardEdgeMargin={.5} useThermalReliefs={false} />
@@ -269,7 +269,7 @@ export default function CeilingFanController() {
     <silkscreentext text="USB: LOGIC POWER ONLY" pcbX={-62} pcbY={-17} fontSize={1} />
     <silkscreentext text="EXTERNAL DUMP LOAD REQUIRED" pcbX={36} pcbY={-53} fontSize={1} />
     <silkscreentext text="+24V   GND" pcbX={-65} pcbY={36.5} fontSize={1} />
-    <silkscreentext text="U     V     W" pcbX={46} pcbY={41.5} fontSize={1} />
+    <silkscreentext text="MOTOR" pcbX={67} pcbY={35} fontSize={1} />
     <silkscreentext text="DUMP: 10R / 100W" pcbX={68} pcbY={-10} fontSize={1} />
     <silkscreentext text="+VM" pcbX={76} pcbY={-21.5} fontSize={.9} />
     <silkscreentext text="SW" pcbX={76} pcbY={-16.5} fontSize={.9} />

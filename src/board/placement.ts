@@ -3,7 +3,7 @@
 export const placement: Record<string, {pcbX?:number;pcbY?:number;pcbRotation?:number}> = {
   J_DC:{pcbX:-72,pcbY:44,pcbRotation:90}, F1:{pcbX:-49,pcbY:44}, D_REVERSE:{pcbX:-32,pcbY:43,pcbRotation:270},
   D_BUS:{pcbX:-19,pcbY:42}, C_BUS:{pcbX:0,pcbY:42}, C_BUS_2:{pcbX:14,pcbY:42}, C_BUS_HF:{pcbX:5,pcbY:32}, R_BLEED:{pcbX:-6,pcbY:32},
-  J_MOTOR:{pcbX:46,pcbY:48,pcbRotation:0},
+  J_MOTOR:{pcbX:69,pcbY:21,pcbRotation:270},
   U_BUCK:{pcbX:-60,pcbY:23}, L1:{pcbX:-45,pcbY:23},
   C_BUCK_IN:{pcbX:-69,pcbY:24,pcbRotation:90}, C_BUCK_HF:{pcbX:-65.5,pcbY:23.5,pcbRotation:90},
   C_BUCK_IN2:{pcbX:-72.5,pcbY:24,pcbRotation:90}, C_BUCK_IN3:{pcbX:-76,pcbY:24,pcbRotation:90},
@@ -91,6 +91,7 @@ Object.assign(placement, {
   U_LDO:{pcbX:-37,pcbY:-2},C_LDO_OUT:{pcbX:-33,pcbY:-8,pcbRotation:0},
   C_LDO_IN:{pcbX:-38,pcbY:-6},
   R_MUX_ST:{pcbX:-47,pcbY:-19},
+  J_TEST:{pcbX:22,pcbY:-47},
   D_BUS:{pcbX:-19,pcbY:42,pcbRotation:0},
   R_BLEED:{pcbX:-6,pcbY:32,pcbRotation:180},
 })
