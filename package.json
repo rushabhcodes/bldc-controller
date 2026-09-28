@@ -1,6 +1,6 @@
 {
   "name": "@tsci/rushabhcodes.bldc-controller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "24 V ceiling-fan BLDC controller bench prototype",
   "main": "index.circuit.tsx",
   "keywords": [
